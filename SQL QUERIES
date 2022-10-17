@@ -2,6 +2,8 @@ create database company;
 
 use company;
 
+-- To create a table
+
 create table worker(
 WORKER_ID varchar(10) not null  primary key,
 FIRST_NAME varchar(30),
@@ -11,9 +13,15 @@ JOINING_DATE datetime,
 DEPARTMENT varchar(20)
 );
 
+-- to select the table
+
 select * from worker;
 
+--To drop the table
+
 drop table worker;
+
+--To insert data into table
 
 insert into worker values('001','Monika','Arora',100000,'2014-02-20 09:00:00','HR');
 insert into worker values('002','Niharika','Verma',80000,'2014-06-11 09:00:00','Admin');
@@ -24,38 +32,55 @@ insert into worker values('006','Vipul','Diwan',200000,'2014-06-11 09:00:00','Ac
 insert into worker values('007','Satish','Kumar',75000,'2014-01-20 09:00:00','Account');
 insert into worker values('008','Geetika','Chauhan',90000,'2014-04-11 09:00:00','Admin');
 
+-- 1. Write an SQL query to print the FIRST_NAME from Worker table after replacing ‘a’ with ‘A’?
+
 select replace (FIRST_NAME,'a','A') from worker;
 
+-- 2. Write an SQL query to print the FIRST_NAME and LAST_NAME from Worker table into a single column COMPLETE_NAME. A space char should separate them?
+
 select concat(FIRST_NAME, ' ' , LAST_NAME) as COMPLETE_NAME from worker;
+
+-- 3. Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending and DEPARTMENT Descending?
 
 select * 
 from worker
 Order by FIRST_NAME, DEPARTMENT desc;
 
+-- 4. Write an SQL query to print details of Workers with DEPARTMENT name as “Admin”?
+
 select *
 from worker 
 where DEPARTMENT = 'Admin';
+
+-- 5. Write an SQL query to print details for Workers with the first name as “Vipul” and “Satish” from Worker table?
 
 select * from worker 
 where FIRST_NAME in (
  'Vipul','Satish');
  
+ -- 6.Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘a’?
+ 
  select * 
  from worker 
  where FIRST_NAME like '%a';
+ 
+ -- 7. Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘h’ and contains six alphabets?
  
 select * 
  from worker 
  where FIRST_NAME like '______h'; 
  
+ -- 8. Write an SQL query to fetch “FIRST_NAME” from Worker table using the alias name as <WORKER_NAME>?
+ 
  select FIRST_NAME as WORKER_NAME 
  from worker;
  
+ -- 9. Write an SQL query to fetch “FIRST_NAME” from Worker table in upper case?
+ 
  select upper(FIRST_NAME) as FIRST_NAME from worker;
+ 
+ -- 10. Write an SQL query to print details of the Workers whose SALARY lies between 100000 and 500000?
  
  select *
  from worker
  where SALARY between 100000 and 500000;
- 
-
-select * from worker;
