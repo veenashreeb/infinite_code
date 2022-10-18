@@ -1,3 +1,64 @@
+Q1----
+
+DISPLAY ITEM TYPE
+
+ 
+
+Display Item Type
+
+ 
+
+The International Film Festival of India (IFFI), founded in 1952, is one of the most
+
+significant film festivals in Asia. The festival is for a week and arrangements have to
+
+be made for food, chairs, tables, etc. The organizing committee plans to deposit the
+
+advance amount to the contractors on confirmation of booking.
+
+Write a Java program to get item type, cost per day, and deposit amount from the
+
+user and display these details in a detailed view using the following classes and
+
+methods.
+
+ 
+
+[Note :Strictly adhere to the object-oriented specifications given as a part of
+
+the problem statement.
+
+Follow the naming conventions as mentioned. Create separate classes in
+
+separate files.]
+
+Consider a class named ItemType.
+
+It must have the following private member variables/attributes.
+
+ 
+
+Data Type Variable
+
+String name
+
+Double costPerDay
+
+Double deposit
+
+Include the appropriate getters and setters.
+
+The ItemType class includes the following method.
+
+ 
+
+Method name Description
+
+public void display() This method should display ‘Item type details’ followed by the details of the ItemType in the format as shown in the sample output.
+
+
+-- Coded part
+
 import java.util.Scanner;
 
 class ItemType {
