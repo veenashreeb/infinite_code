@@ -1,3 +1,66 @@
+Q2-------------------------
+
+Single inheritance
+
+Write a Java program to implement Single Inheritance.
+
+[Note: Strictly adhere to the object oriented specifications given as a part of the problem
+
+statement. Use the same class names and member variable names.
+
+Follow the naming conventions mentioned for getters/setters]
+
+Consider a class named Person with the following private data members.
+
+Data Type     Data Member  
+
+String name
+
+String dateOfBirth
+
+String gender
+
+String mobileNumber
+
+String bloodGroup
+
+Include appropriate getters and setters.
+
+Consider a class named Donor which extends Person class with the following private
+
+data members.
+
+Data Type     Data Member  
+
+String bloodBankName
+
+String donorType
+
+String donationDate
+
+Include appropriate getters and setters.
+
+The class Donor should have the following method
+
+Method Description
+
+public void displayDonationDetails( ) This method displays the donation details. Display the statement ‘Donation Details :’ inside this method Consider another class Main and write the main method to test the above class.
+
+In the main( ) method, read the person and donor details from the user and call the
+
+displayDonationDetails( ) method.
+
+[Note: The date format should be “dd-MM-yyyy”] Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+All text in bold corresponds to input and the rest corresponds to output.
+
+
+
+-- coded part
+
+
 import javax.crypto.spec.PSource;
 import java.awt.*;
 import java.util.Scanner;
