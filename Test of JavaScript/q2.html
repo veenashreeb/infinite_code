@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <style>
+        div#maincontent {
+            height: 115pxpx;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+            }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+            }
+        h4 {
+            padding: 0;
+            margin: 0;
+            }
+    </style>
+</head>
+<body>
+    <center>
+
+        <div id="heading">
+
+            <b>Theatre Drama</b>
+        </div>
+
+        <div id="maincontent">
+
+            <h4>Your Ticket Details:</h4>
+            
+            <br> 
+            <script>
+
+            let Totoal_tickets = prompt("Please enter total no of tickets you would like to book ");
+            let Tic_price = prompt("Please enter the price of Ticket");             
+            let discount = prompt("Please enter the discount");
+            [Tic_price1, Tic_price2, Tic_price3] = Tic_price;
+            let Total_Price = Tic_price * Totoal_tickets
+            let After_Dis = Total_Price * (1-(discount/100))
+                document.write("Total number of seats booked : "+ (Totoal_tickets)+" </br>" )
+                document.write("Total cost of 3 tickets : "+ "$" +(Total_Price) + "<br/>")
+                document.write("Festive season discount is  : "+"10%"+"</br>")
+                document.write("Total cost after discount is : "+"$"+(After_Dis) +"</br>")
+            </script>
+
+        </div>
+
+    </center>
+</body>
+</html>

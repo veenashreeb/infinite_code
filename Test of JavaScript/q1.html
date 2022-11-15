@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veena SHree Bothuraj</title>
+</head>
+<body>
+    <script>
+    console.log("Q1")
+    class Employee {
+	constructor(name, age) {
+		
+		this.name = name;
+		this.age = age;
+	}
+}
+class Person extends Employee {
+	constructor(name, age,role ,contact) {
+		super(name, age); 
+		this.role = role;
+		this.contact = contact;
+	}
+	getDetails() {
+		/*  To displaying details of Employee. */
+        document.write("Name : "+ this.name +" </br>")
+        document.write("Age : "+ this.age+" </br> ")
+        document.write("Role : "+ this.role+" </br> ")
+        document.write("Phone : "+ this.contact+"  </br>")
+		
+	}
+}
+let P = new Person("Veena Shree B", "21", "Associate Software Engineer", "6363082951"); // Creating a Car object 
+document.write("The details of the Employee are  "+" </br> </br>" )
+P.getDetails(); 
+    </script>    
+</body>
+</html>
