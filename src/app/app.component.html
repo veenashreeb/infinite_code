@@ -1,0 +1,18 @@
+<!-- [formGroup]="loginForm" (ngSubmit)="loginUser()" -->
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+<div class="all">
+  <div id="heading">
+
+  <b>Login</b>
+</div>
+
+<div id="maincontent">
+
+  <h4>User Name <input type="text" formControlName="user" ></h4><br>
+  <span style="color: red;" *ngIf="user && user.invalid && user.touched">User name is required</span>
+  <h4>Password <input type="password" formControlName="password"></h4>
+<span style="color: red;" *ngIf="password && password.invalid && password.touched"> passowrd is required</span><br><br>
+<button [disabled]="loginForm.invalid">Login</button>
+</div>
+</div>
+</form>

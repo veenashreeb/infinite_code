@@ -1,0 +1,34 @@
+.all{
+  margin-top: 10pc;
+  margin-left: 30pc;
+}
+div#maincontent {
+  height: 115pxpx;
+  width: 300px;
+  border: 1px solid #0073ff;
+  text-align: left;
+  color: #000000;
+  font-family: calibri;
+  font-size: 20;
+  padding: 5px;
+  }
+div#heading {
+  text-decoration: bold;
+  text-align: center;
+  margin-top: 80px;
+  width: 300px;
+  border: 1px solid #0d73f0;
+  text-align: center;
+  color: #f1f4f7;
+  background-color: #1267cf;
+  font-family: calibri;
+  font-size: 20;
+  padding: 5px;
+  }
+h4 {
+  padding: 0;
+  margin-right: 0px;
+  }
+input{
+  padding: 5px;
+}
